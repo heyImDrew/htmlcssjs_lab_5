@@ -1,0 +1,35 @@
+body {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+.div-action {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    margin: 25px;
+}
+.form-action {
+    text-align: center;
+}
+#badd {
+    margin: 5px;
+}
+button {
+    margin: 5px;
+}
+table {
+    margin: 10px;
+}
+td {
+    border: 2px solid black;
+}
+.col-id {
+    width: 50px;
+}
+.col-name {
+    width: 250px;
+}
+.col-phone {
+    width: 250px;
+}

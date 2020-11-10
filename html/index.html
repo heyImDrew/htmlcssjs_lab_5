@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="../css/index.css">
+    <script src="../js/database.js"></script>
+	<script src="https://cdn.jsdelivr.net/npm/idb@3.0.2/build/idb.min.js"></script>
+    <title>Title</title>
+</head>
+<body>
+    <div class = "div-action">
+        <form id="form-add" class="form-action" onsubmit="buttonAdd(); return false">
+            <input id="badd" type="submit" value="Add"><br>
+            <input type="text" size="1" placeholder="ID" name="id" required>
+            <input type="text" size="25" placeholder="Name" name="name" required>
+            <input type="text" size="25" placeholder="Phone" name="phone" required>
+            <input type="button" value="Clear" onclick="clear_form()">
+        </form>
+    </div>
+    <div class = "div-action">
+        <button id="bdelall" onclick="deleteById()">Delete</button>
+        <select id="idselector">
+            <option>Select id to delete</option>
+        </select>
+    </div>
+    <div class = "div-action">
+        <button id="bdelall" onclick="deleteAll()">Delete all</button>
+    </div>
+    <div class = "div-action">
+        <button id="bshow" onclick="buttonShow()">Show</button>
+        <div id="show"></div>
+    </div>
+</body>
+</html>
